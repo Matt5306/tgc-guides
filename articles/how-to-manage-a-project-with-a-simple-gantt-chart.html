@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Manage a Project with a Simple Gantt Chart | TidyGridCoeusCo</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="../index.html">TidyGrid<span>CoeusCo</span></a>
+<nav><a href="../index.html">Guides</a></nav></div></header>
+<article class="article"><a class="back" href="../index.html">&larr; All guides</a>
+<h1>How to Manage a Project with a Simple Gantt Chart</h1>
+<p><strong>Learn how to manage any project with a simple Gantt chart—plan tasks, set realistic deadlines, track dependencies, and keep your team on schedule without expensive software.</strong></p>
+<p>You've got a project with a dozen moving parts, a deadline that feels too close, and a sinking feeling that something important is going to slip through the cracks. Maybe it's a website launch, an office move, a product release, or a home renovation. The tasks are clear enough in your head, but the moment you try to figure out what has to happen <em>when</em>—and what depends on what—everything turns to mush.</p>
+<p>A Gantt chart fixes that. It's a horizontal bar chart that lays out every task against a timeline, so you can see at a glance what's happening now, what's coming next, and where the bottlenecks are. You don't need a project management degree or a $30/month software subscription. You need a clear list of tasks and a grid. This guide walks you through building and managing a project with a simple Gantt chart, step by step.</p>
+<h2>What a Gantt Chart Actually Shows You</h2>
+<p>A Gantt chart has three core pieces:</p>
+<ul>
+<li><strong>Tasks</strong> listed down the left side, in roughly the order they'll happen.</li>
+<li><strong>A timeline</strong> across the top—usually days or weeks.</li>
+<li><strong>Bars</strong> that stretch across the timeline showing when each task starts and ends.</li>
+</ul>
+<p>The magic is in seeing all of it together. A task list tells you <em>what</em> needs doing. A Gantt chart tells you <em>when</em>, <em>how long</em>, and <em>what's blocking what</em>. When two bars overlap, you know those tasks run at the same time. When one bar ends right where another begins, you've got a dependency—the second task can't start until the first finishes.</p>
+<p>That visual layout is what turns a vague to-do list into an actual plan.</p>
+<h2>Step 1: Break the Project Into Tasks</h2>
+<p>Before you touch a timeline, dump every task out of your head. Don't worry about order yet—just get them down. For a small website launch, your list might look like this:</p>
+<ul>
+<li>Finalize site content</li>
+<li>Design homepage mockup</li>
+<li>Build homepage</li>
+<li>Build inner pages</li>
+<li>Set up hosting</li>
+<li>Test on mobile</li>
+<li>Launch</li>
+</ul>
+<p>Aim for tasks that take somewhere between a half-day and a week. If a task is bigger than a week, break it into smaller chunks—"Build site" is too vague to schedule, but "Build homepage" and "Build inner pages" are concrete enough to assign dates to.</p>
+<h2>Step 2: Estimate Duration for Each Task</h2>
+<p>Now put a realistic length on each task. Here's where most people get burned: they estimate the <em>ideal</em> time, not the <em>real</em> time. "Design homepage mockup" might take four focused hours, but spread across a week of meetings, emails, and revisions, the calendar duration is three days. Estimate calendar days, not heads-down hours.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Finalize site content</td>
+<td>3 days</td>
+</tr>
+<tr>
+<td>Design homepage mockup</td>
+<td>3 days</td>
+</tr>
+<tr>
+<td>Build homepage</td>
+<td>4 days</td>
+</tr>
+<tr>
+<td>Build inner pages</td>
+<td>5 days</td>
+</tr>
+<tr>
+<td>Set up hosting</td>
+<td>1 day</td>
+</tr>
+<tr>
+<td>Test on mobile</td>
+<td>2 days</td>
+</tr>
+<tr>
+<td>Launch</td>
+<td>1 day</td>
+</tr>
+</tbody>
+</table>
+<p>When in doubt, add a buffer. A task you think is two days is probably three.</p>
+<h2>Step 3: Map the Dependencies</h2>
+<p>This is the step that separates a real plan from wishful thinking. Ask of every task: <em>What has to be done before I can start this?</em></p>
+<ul>
+<li>"Build homepage" can't start until "Design homepage mockup" is done.</li>
+<li>"Test on mobile" can't start until the pages are built.</li>
+<li>"Launch" can't happen until testing passes and hosting is live.</li>
+</ul>
+<p>Some tasks have no dependencies and can run in parallel. "Set up hosting" doesn't need to wait for design—you can do it any time before launch. Spotting those parallel tasks is how you compress a timeline. If three things can happen at once, your project doesn't take as long as the sum of its parts.</p>
+<h2>Step 4: Lay It Out on the Timeline</h2>
+<p>Now place the bars. Start with your first task on day one, then chain dependent tasks so each begins when its predecessor ends. Run independent tasks in parallel where you can.</p>
+<p>Here's the worked example. Say the project starts Monday, June 1:</p>
+<ul>
+<li><strong>Finalize content:</strong> June 1–3</li>
+<li><strong>Design mockup:</strong> June 1–3 (runs parallel—content and design don't block each other)</li>
+<li><strong>Build homepage:</strong> June 4–9 (waits for mockup)</li>
+<li><strong>Build inner pages:</strong> June 10–16 (waits for homepage, reuses the layout)</li>
+<li><strong>Set up hosting:</strong> June 4 (one day, slotted in early since nothing blocks it)</li>
+<li><strong>Test on mobile:</strong> June 17–18 (waits for all pages)</li>
+<li><strong>Launch:</strong> June 19</li>
+</ul>
+<p>Reading the chart, you immediately see the <em>critical path</em>—the chain of dependent tasks that determines the finish date: content/design → homepage → inner pages → testing → launch. Anything that slips on that path pushes the whole launch. Hosting, sitting off to the side with slack, can slip a week and nobody notices.</p>
+<h2>Step 5: Track Progress and Adjust</h2>
+<p>A Gantt chart isn't a one-time document—it's a living dashboard. Each week, update it:</p>
+<ul>
+<li><strong>Shade completed portions</strong> of each bar so you can see what's done versus planned.</li>
+<li><strong>Move bars</strong> when reality diverges from the plan. If "Build homepage" runs two days late, push everything downstream and look at what it does to your launch date.</li>
+<li><strong>Watch the critical path.</strong> A delay on a non-critical task is annoying; a delay on a critical-path task is the difference between launching on time and not.</li>
+</ul>
+<p>The whole point is early warning. When you can <em>see</em> that a slip on Tuesday threatens a launch three weeks out, you can react—reassign help, cut scope, or move the date deliberately instead of discovering the problem the day before go-live.</p>
+<h2>Common Mistakes to Avoid</h2>
+<p><strong>Listing tasks too big.</strong> "Do the marketing" isn't a task—it's a project of its own. If you can't put a clear start and end on a bar, break it down.</p>
+<p><strong>Ignoring dependencies.</strong> Scheduling tasks back-to-back without asking what blocks what produces a beautiful chart that's pure fiction. Map the dependencies before you place a single bar.</p>
+<p><strong>No buffer time.</strong> Real projects have sick days, revisions, and "wait, the client wants changes." A plan with zero slack breaks the first time anything goes sideways. Build in breathing room, especially before hard deadlines.</p>
+<p><strong>Never updating it.</strong> A Gantt chart you build once and never touch is wallpaper. The value comes from revisiting it weekly and adjusting as reality unfolds.</p>
+<p><strong>Overcomplicating it.</strong> You don't need 80 tasks, color-coded resource leveling, and percent-complete tracking on a five-week project. For small projects, a clean grid with 10–20 tasks does everything you need.</p>
+<h2>Get Started Without Building It From Scratch</h2>
+<p>You can absolutely draw a Gantt chart by hand or build one cell by cell in a spreadsheet. But setting up the formulas, the timeline headers, and the auto-updating bars takes a couple of hours you probably don't have when a deadline is bearing down.</p>
+<p>If you'd rather just plug in your tasks and start managing, our <strong>Gantt Chart Project Timeline</strong> template does the setup for you—task list, durations, dependencies, and auto-generated bars that shift when your dates change. Drop in your project and you'll have a working schedule in minutes instead of an afternoon. It's a small, honest tool for keeping a project on track—nothing more, nothing you don't need.</p>
+</article>
+<footer class="site-footer"><div class="wrap"><p>&copy; TidyGridCoeusCo &mdash; plain-English tech &amp; small-business guides. General information, not a substitute for professional service.</p></div></footer>
+</body></html>

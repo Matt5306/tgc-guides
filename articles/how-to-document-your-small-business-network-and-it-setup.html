@@ -1,0 +1,98 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Document Your Small Business Network and IT Setup | TidyGridCoeusCo</title>
+<meta name="description" content="A step-by-step guide to documenting your small business network and IT setup — what to record, how to draw a simple network diagram, and how to keep it current so you're never locked out of your own systems.">
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="../index.html">TidyGrid<span>CoeusCo</span></a>
+<nav><a href="../index.html">Guides</a></nav></div></header>
+<article class="article"><a class="back" href="../index.html">&larr; All guides</a>
+<h1>How to Document Your Small Business Network and IT Setup</h1>
+<p>Picture this: your internet goes down, your one tech-savvy employee is on vacation, and the support person on the phone asks for the router's admin password and the modem model. Nobody knows. The Wi-Fi password is on a sticky note that fell behind a desk two years ago. This is what undocumented IT looks like — and it's how a 20-minute fix becomes a two-day outage.</p>
+<p>Network and IT documentation is just writing down how your systems are connected, what the credentials are, and who to call when something breaks. It's boring right up until the moment it saves your business. This guide shows you exactly what to record and how, whether you've got a five-person office or a serious home lab.</p>
+<h2>Why Bother Documenting Your Setup?</h2>
+<p>Three reasons, all of them practical:</p>
+<ol>
+<li><strong>Troubleshooting speed.</strong> When something breaks, documentation tells you what's connected to what, so you fix the real problem instead of guessing.</li>
+<li><strong>You're not held hostage by one person's memory.</strong> If the only person who "knows the network" leaves, gets sick, or goes on holiday, you're not stranded.</li>
+<li><strong>Onboarding and handoffs.</strong> New staff, a contractor, or an IT provider can get up to speed in minutes instead of reverse-engineering your setup.</li>
+</ol>
+<p>Good documentation turns your IT from a black box into something anyone reasonably capable can understand and support.</p>
+<h2>Step 1: Inventory Your Devices and Connections</h2>
+<p>Start with a simple list of everything on your network. For each device, record:</p>
+<ul>
+<li><strong>Device name</strong> — what you call it (e.g., "Front desk PC," "Main router").</li>
+<li><strong>Type</strong> — router, switch, modem, server, NAS, printer, access point, computer.</li>
+<li><strong>Make / model</strong> — for support calls and replacements.</li>
+<li><strong>IP address</strong> — especially for anything with a fixed (static) address.</li>
+<li><strong>MAC address</strong> — useful for network rules and identifying devices.</li>
+<li><strong>Location</strong> — physical spot (closet, desk, rack slot).</li>
+<li><strong>Purpose</strong> — what it does in one line.</li>
+</ul>
+<p>This is your network device inventory. It doesn't have to be exhaustive on day one — get the core infrastructure (modem, router, switches, servers) down first, then fill in the rest.</p>
+<h2>Step 2: Record How Everything Connects (Your Network Diagram)</h2>
+<p>A network diagram is a simple picture of what plugs into what. It doesn't need to be a work of art — boxes and lines are plenty. The classic layout follows the path your internet takes:</p>
+<blockquote>
+<p><strong>Internet → Modem → Router/Firewall → Switch → Devices</strong></p>
+</blockquote>
+<p>Draw a box for each major device and connect them with lines showing the physical or wireless links. Note which switch port or which access point each group of devices hangs off. For a small office, this fits on a single page. For a home lab, you might separate it by VLAN or by rack.</p>
+<p>Even a rough diagram is enormously valuable. The first question any support tech asks is "how is it wired?" — and a picture answers it in seconds.</p>
+<h2>Step 3: Document Your Network Configuration</h2>
+<p>These are the settings that, when forgotten, cause the most pain. Record:</p>
+<ul>
+<li><strong>Internet / ISP details:</strong> provider name, account number, support phone, plan, and any static IP they've assigned.</li>
+<li><strong>Router / firewall:</strong> admin login URL, admin username, the network's gateway IP, DHCP range, and DNS settings.</li>
+<li><strong>Wi-Fi:</strong> network names (SSIDs), the security type, and — yes — the passwords. Include the guest network too.</li>
+<li><strong>VLANs / subnets</strong> (if you use them): what each one is for and its IP range.</li>
+<li><strong>Port forwarding / firewall rules:</strong> which ports are open and why. This list saves you from staring at mystery rules later.</li>
+<li><strong>Static IP assignments:</strong> which devices have reserved addresses.</li>
+</ul>
+<p>Be honest and complete here. The whole point is that someone can pick this up and actually log in.</p>
+<h2>Step 4: Handle Passwords and Credentials Safely</h2>
+<p>Credentials are the most sensitive part of your documentation, and they need care. <strong>Do not</strong> store passwords in plain text in a shared spreadsheet that anyone can open.</p>
+<p>The right approach:</p>
+<ul>
+<li>Use a <strong>password manager</strong> for the actual secrets, and reference it in your documentation (e.g., "Router admin password — stored in [Password Manager], entry 'Main Router'").</li>
+<li>Or keep credentials in a separate, access-controlled, encrypted file — not the same open document as your diagram.</li>
+<li>Record <em>what</em> exists and <em>where the secret lives</em>, even if the secret itself is stored elsewhere. Your documentation should always tell you which accounts and logins exist; the password manager holds the values.</li>
+</ul>
+<p>This keeps your main documentation shareable while keeping the actual secrets locked down.</p>
+<h2>Step 5: Record Services, Accounts, and Renewals</h2>
+<p>Your IT setup is more than hardware. Document the services and accounts that keep it running:</p>
+<ul>
+<li><strong>Domain name</strong> — registrar, expiry date, and login.</li>
+<li><strong>Website hosting</strong> — provider, plan, control panel login.</li>
+<li><strong>Email</strong> — provider (Microsoft 365, Google Workspace), admin account.</li>
+<li><strong>Cloud and SaaS tools</strong> — what they are and who administers them.</li>
+<li><strong>Backups</strong> — what's backed up, where to, how often, and how to restore. (A backup nobody knows how to restore isn't a backup.)</li>
+<li><strong>Key software and licenses</strong> — and their renewal dates.</li>
+</ul>
+<p>The renewal and expiry dates matter especially. A lapsed domain can take your website <em>and</em> email offline overnight — and that's a brutal way to discover you stopped tracking it.</p>
+<h2>Step 6: List Your Vendors and Support Contacts</h2>
+<p>When something breaks, the last thing you want is to be hunting for a phone number. Keep a simple contact list:</p>
+<ul>
+<li>ISP support line and your account number.</li>
+<li>IT support provider or contractor (if you have one).</li>
+<li>Key vendors (the company that installed your phones, your CCTV, etc.).</li>
+<li>Account numbers and any support PINs needed to actually get help.</li>
+</ul>
+<p>One page, one place. This is the list you'll be grateful for at 8 a.m. on the worst day.</p>
+<h2>Step 7: Keep It Current</h2>
+<p>Documentation rots. Every time you change the network — new device, new password, swapped router, opened a port — update the document <em>that day</em>. It takes a minute then; reconstructing it later takes hours.</p>
+<p>Beyond that, do a <strong>quick review every six months</strong>: walk the diagram, confirm devices still exist, check that renewal dates haven't crept up. A half-hour review twice a year keeps your documentation trustworthy, which is the only kind worth having.</p>
+<h2>Common Mistakes to Avoid</h2>
+<ul>
+<li><strong>Plain-text passwords in a shared file.</strong> Use a password manager; reference it instead.</li>
+<li><strong>A diagram with no detail.</strong> Boxes are good; boxes labeled with names and IPs are better.</li>
+<li><strong>Forgetting services and renewals.</strong> Domains and hosting going dark is a top-tier disaster.</li>
+<li><strong>Letting it go stale.</strong> Update on change, review twice a year.</li>
+<li><strong>One copy in one person's head.</strong> The whole point is that it lives outside any single person.</li>
+</ul>
+<h2>You Now Have a Map of Your IT</h2>
+<p>Do this and anyone — you, a new hire, a support tech — can understand your network, log into the right gear, find the right contact, and fix problems fast. You've turned your IT from a fragile mystery into a documented, supportable system.</p>
+<h2>If You'd Rather Not Build It From Scratch</h2>
+<p>Setting up the device inventory columns, a clean place for the network configuration, a safe way to reference credentials, and the services-and-renewals tracker takes some structuring to get right. If you'd rather fill in a ready-made framework, I put it all into a template — the <strong>Network / Home-Lab Documentation Template</strong>. It has the device inventory, configuration sections, a credentials reference layout, vendor contacts, and a services/renewal tracker already laid out, for both small offices and home labs.</p>
+<p>It's also part of the <strong>IT Pro Toolkit</strong> bundle, which pairs it with the IT Asset Tracker and other IT spreadsheets if you want the complete set. The steps above stand on their own — the template just gives you the structure so you can start filling in your details instead of designing the layout.</p>
+</article>
+<footer class="site-footer"><div class="wrap"><p>&copy; TidyGridCoeusCo &mdash; plain-English tech &amp; small-business guides. General information, not a substitute for professional service.</p></div></footer>
+</body></html>

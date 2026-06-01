@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inventory Management for Small Online Stores: Tracking Stock and COGS | TidyGridCoeusCo</title>
+<meta name="description" content="">
+<link rel="stylesheet" href="../style.css"></head><body>
+<header class="site-header"><div class="wrap">
+<a class="logo" href="../index.html">TidyGrid<span>CoeusCo</span></a>
+<nav><a href="../index.html">Guides</a></nav></div></header>
+<article class="article"><a class="back" href="../index.html">&larr; All guides</a>
+<h1>Inventory Management for Small Online Stores: Tracking Stock and COGS</h1>
+<p><strong>A practical inventory management guide for small online stores. Learn how to track stock levels, calculate COGS, set reorder points, and avoid stockouts and dead stock — with worked examples.</strong></p>
+<p>You started an online store because you love the product, not because you wanted to become a warehouse manager. But here you are: cash tied up in boxes, a bestseller that just sold out for the third time, and a corner of the garage full of a color nobody wants. Inventory is where small online stores quietly bleed money — through stockouts that lose sales and dead stock that locks up cash.</p>
+<p>The good news is that inventory management for a small store isn't complicated. You don't need enterprise software. You need to know how much you have, how fast it sells, when to reorder, and what it actually costs you. This guide walks through all four with real numbers.</p>
+<h2>Why Inventory Tracking Matters More Than It Seems</h2>
+<p>Every unit sitting on your shelf is cash you've already spent that you can't use for anything else. Buy too much and you've frozen your working capital. Buy too little and you run out, which doesn't just cost the lost sale — it pushes customers to a competitor and tanks your product's ranking on marketplaces.</p>
+<p>There are two failure modes, and good tracking protects you from both:</p>
+<ul>
+<li><strong>Stockouts:</strong> You run out of a product people want to buy. Lost revenue, lost ranking, lost customers.</li>
+<li><strong>Dead stock:</strong> Product that doesn't sell, slowly losing value while occupying space and cash.</li>
+</ul>
+<p>The whole game is staying in the narrow band between them.</p>
+<h2>Step 1: Track What You Actually Have (SKUs and Stock Levels)</h2>
+<p>Start by giving every distinct product variant its own <strong>SKU</strong> (stock keeping unit) — a short unique code. A blue t-shirt in size medium and the same shirt in large are two different SKUs because they sell and reorder independently.</p>
+<p>For each SKU, track at minimum:</p>
+<ul>
+<li>SKU code</li>
+<li>Product name / variant</li>
+<li>Quantity on hand</li>
+<li>Unit cost (what <em>you</em> paid)</li>
+<li>Reorder point (more on this below)</li>
+</ul>
+<p>A simple table is enough to start:</p>
+<table>
+<thead>
+<tr>
+<th>SKU</th>
+<th>Product</th>
+<th>On Hand</th>
+<th>Unit Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TS-BLU-M</td>
+<td>Blue Tee, M</td>
+<td>18</td>
+<td>$7.50</td>
+</tr>
+<tr>
+<td>TS-BLU-L</td>
+<td>Blue Tee, L</td>
+<td>4</td>
+<td>$7.50</td>
+</tr>
+<tr>
+<td>MUG-CER-WHT</td>
+<td>White Mug</td>
+<td>60</td>
+<td>$3.20</td>
+</tr>
+</tbody>
+</table>
+<p>Update quantity on hand every time you receive a shipment or make a sale. If you're on Shopify, Etsy, or similar, this can sync automatically — but you still want your own master record so you can plan, not just react.</p>
+<h2>Step 2: Understand and Calculate COGS</h2>
+<p><strong>Cost of Goods Sold (COGS)</strong> is the direct cost of the products you actually sold during a period. It's not what you spent buying inventory — it's the cost of the units that <em>left</em> during the month.</p>
+<p>The formula:</p>
+<p><strong>COGS = Beginning Inventory + Purchases − Ending Inventory</strong></p>
+<p>Worked example for the White Mug over one month:</p>
+<ul>
+<li>Beginning inventory: 60 mugs × $3.20 = $192</li>
+<li>Purchases: bought 100 more mugs × $3.20 = $320</li>
+<li>Ending inventory: 90 mugs left × $3.20 = $288</li>
+</ul>
+<p>COGS = $192 + $320 − $288 = <strong>$224</strong>.</p>
+<p>That means you sold $224 worth of mugs (at cost) during the month. If you sold those mugs for $12 each and moved 70 of them, your revenue was $840 and your gross profit on mugs was $840 − $224 = <strong>$616</strong>, a 73% gross margin.</p>
+<p>COGS is the number that turns "I sold a lot" into "I made money." You can't know your true profit without it.</p>
+<h3>A note on costing methods</h3>
+<p>When unit costs change between shipments, you need a rule for which cost to apply. The two common small-store methods:</p>
+<ul>
+<li><strong>FIFO (First In, First Out):</strong> Assume the oldest stock sells first. Most intuitive and matches how physical goods usually move.</li>
+<li><strong>Weighted Average:</strong> Blend all unit costs into one average. Simplest to maintain when prices wobble.</li>
+</ul>
+<p>Pick one and stick with it. Consistency matters more than the choice for a small store.</p>
+<h2>Step 3: Set Reorder Points So You Never Run Out</h2>
+<p>A <strong>reorder point</strong> is the stock level that triggers a new order. Hit it, and you reorder <em>before</em> you run dry. The formula:</p>
+<p><strong>Reorder Point = (Average Daily Sales × Lead Time in Days) + Safety Stock</strong></p>
+<p>Worked example for the Blue Tee, Large:</p>
+<ul>
+<li>Average daily sales: 2 units</li>
+<li>Lead time (order to delivery): 10 days</li>
+<li>Safety stock buffer: 5 units</li>
+</ul>
+<p>Reorder Point = (2 × 10) + 5 = <strong>25 units</strong>.</p>
+<p>So when Blue Tee L drops to 25 units, you reorder. The table above showed only 4 on hand — that SKU is dangerously below its reorder point and should be ordered today.</p>
+<p><strong>Safety stock</strong> is your cushion against the unexpected: a sudden sales spike or a supplier delay. A common starting point is enough to cover a few extra days of average sales. Tighten or loosen it based on how reliable your supplier is.</p>
+<h2>Step 4: Watch Inventory Turnover</h2>
+<p>Turnover tells you how many times you sold through your stock in a period. It's the single best signal of whether you're holding too much.</p>
+<p><strong>Inventory Turnover = COGS ÷ Average Inventory Value</strong></p>
+<p>If your annual COGS is $48,000 and your average inventory value is $8,000:</p>
+<p>$48,000 ÷ $8,000 = <strong>6 turns per year</strong>.</p>
+<p>Six turns means you sell through your entire inventory roughly every two months. Higher turnover means leaner, healthier cash use. A turnover of 1 or 2 usually means too much cash frozen in slow stock — a dead stock warning. Compare turnover SKU by SKU to find the laggards.</p>
+<h2>Common Inventory Mistakes Small Stores Make</h2>
+<ul>
+<li><strong>Confusing money spent on inventory with COGS.</strong> Buying $2,000 of product is not a $2,000 expense on your P&amp;L — it becomes COGS only as those units sell. Treating purchases as immediate costs wrecks your profit numbers.</li>
+<li><strong>No reorder points, just gut feel.</strong> Reordering "when it looks low" guarantees you'll either run out of winners or over-buy losers. Do the simple math per SKU.</li>
+<li><strong>One reorder point for everything.</strong> A product that sells 20 a day and one that sells 1 a week need completely different triggers. Reorder points are per-SKU.</li>
+<li><strong>Ignoring dead stock.</strong> Slow movers don't fix themselves. Identify anything with turnover under 1–2 per year and clear it with a bundle or discount to free the cash — even at a small loss, recovered cash beats frozen cash.</li>
+<li><strong>Not counting safety stock.</strong> Setting your reorder point to exactly cover lead time means any hiccup causes a stockout. Always build a buffer.</li>
+<li><strong>Never doing a physical count.</strong> Your records drift from reality through breakage, theft, and miscounts. Reconcile against an actual count at least quarterly.</li>
+</ul>
+<h2>Get a Handle on Your Stock This Week</h2>
+<p>Start small: list every SKU, record on-hand quantity and unit cost, and calculate a reorder point for your top ten sellers. Then run the COGS formula for last month so you know your real gross margin. Those two moves alone will surface the SKUs quietly costing you money.</p>
+<p>If you'd rather not build the formulas from scratch, our <strong>Inventory &amp; COGS Tracker</strong> does it for you. Enter your SKUs, costs, and sales, and it calculates COGS, gross margin, reorder points, and turnover automatically — and flags any SKU that's below its reorder point or sitting as dead stock. It's designed for small online sellers who want control without a logistics degree. You'll find it on our templates page if you want to skip the setup.</p>
+</article>
+<footer class="site-footer"><div class="wrap"><p>&copy; TidyGridCoeusCo &mdash; plain-English tech &amp; small-business guides. General information, not a substitute for professional service.</p></div></footer>
+</body></html>
